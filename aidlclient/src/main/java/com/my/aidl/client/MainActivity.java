@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void onBindService() {
         Intent intent = new Intent();
 //        intent.setPackage("com.my.aidl.test");
-        intent.setComponent(new ComponentName("com.my.aidl.test", "com.my.aidl.test.IMyAidlInterface"));
+        intent.setComponent(new ComponentName("com.my.aidl.test", "com.my.aidl.test.MyService"));
         bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE);
     }
 
